@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "theses",
+  "info": {
+    "name": "theses"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "thesis_title": {
+      "type": "string"
+    },
+    "student_name": {
+      "type": "string"
+    },
+    "guide": {
+      "type": "string"
+    },
+    "coguides": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Submitted",
+        "Ongoing",
+        "New"
+      ]
+    },
+    "funding": {
+      "type": "enumeration",
+      "enum": [
+        "Non_Funded",
+        "Part_of_Large_Fund"
+      ]
+    },
+    "brief_report": {
+      "type": "text"
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "rejected_reason": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

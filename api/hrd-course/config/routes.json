@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hrd-courses",
+      "handler": "hrd-course.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hrd-courses/count",
+      "handler": "hrd-course.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hrd-courses/:id",
+      "handler": "hrd-course.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hrd-courses",
+      "handler": "hrd-course.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hrd-courses/:id",
+      "handler": "hrd-course.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hrd-courses/:id",
+      "handler": "hrd-course.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

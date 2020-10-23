@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pc-diagnostic-services",
+      "handler": "pc-diagnostic-service.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-diagnostic-services/count",
+      "handler": "pc-diagnostic-service.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-diagnostic-services/:id",
+      "handler": "pc-diagnostic-service.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pc-diagnostic-services",
+      "handler": "pc-diagnostic-service.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pc-diagnostic-services/:id",
+      "handler": "pc-diagnostic-service.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pc-diagnostic-services/:id",
+      "handler": "pc-diagnostic-service.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

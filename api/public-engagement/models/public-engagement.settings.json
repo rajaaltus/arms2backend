@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "public_engagements",
+  "info": {
+    "name": "public_engagement"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Public_Lecture",
+        "Mass_Media",
+        "Others"
+      ]
+    },
+    "faculty_name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "program_name": {
+      "type": "string"
+    },
+    "target_audience": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "place": {
+      "type": "string"
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "rejected_reason": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

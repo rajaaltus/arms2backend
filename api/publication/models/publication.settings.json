@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "publications",
+  "info": {
+    "name": "publication"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "publication_type": {
+      "type": "enumeration",
+      "enum": ["Journal_Article", "Articles_for_Professionals", "Book", "Book_Chapter", "Monograph", "Manual", "Report", "Article_for_General_public"]
+    },
+    "classification": {
+      "type": "enumeration",
+      "enum": ["International", "National", "NotApplicable", "Others"]
+    },
+    "pmid": {
+      "type": "string"
+    },
+    "article_title": {
+      "type": "string"
+    },
+    "journal_title": {
+      "type": "string"
+    },
+    "pub_date": {
+      "type": "date"
+    },
+    "volume_no": {
+      "type": "string"
+    },
+    "book_title": {
+      "type": "string"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "chapter_title": {
+      "type": "string"
+    },
+    "editor_names": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "text"
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "approved_date": {
+      "type": "date"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "authors": {
+      "type": "text"
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "enum": ["Pending", "Approved", "Rejected"]
+    },
+    "department": {
+      "model": "department"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "pages": {
+      "type": "string"
+    },
+    "rejected_reason": {
+      "type": "string"
+    }
+  }
+}

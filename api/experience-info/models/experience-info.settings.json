@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "experience_infos",
+  "info": {
+    "name": "experience_info"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "designation": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "duration_from": {
+      "type": "date"
+    },
+    "duration_to": {
+      "type": "date"
+    },
+    "brief_summary": {
+      "type": "text"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

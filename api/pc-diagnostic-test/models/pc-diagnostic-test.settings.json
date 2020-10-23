@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "pc_diagnostic_tests",
+  "info": {
+    "name": "pc_diagnostic_test"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "lab_type": {
+      "type": "enumeration",
+      "enum": [
+        "Routine_Test",
+        "Special_Test"
+      ]
+    },
+    "test_name": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    }
+  }
+}

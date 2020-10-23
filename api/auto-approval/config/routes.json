@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/auto-approvals",
+      "handler": "auto-approval.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/auto-approvals/count",
+      "handler": "auto-approval.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/auto-approvals/:id",
+      "handler": "auto-approval.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/auto-approvals",
+      "handler": "auto-approval.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/auto-approvals/:id",
+      "handler": "auto-approval.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/auto-approvals/:id",
+      "handler": "auto-approval.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

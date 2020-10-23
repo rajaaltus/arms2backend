@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "pc_emergency_services",
+  "info": {
+    "name": "pc_emergency_service"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "registrations": {
+      "type": "integer"
+    },
+    "admissions": {
+      "type": "integer"
+    },
+    "deaths": {
+      "type": "integer"
+    },
+    "external_ref": {
+      "type": "integer"
+    },
+    "internal_ref": {
+      "type": "integer"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    }
+  }
+}

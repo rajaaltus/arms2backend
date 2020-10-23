@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pc-clinical-services",
+      "handler": "pc-clinical-service.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-clinical-services/count",
+      "handler": "pc-clinical-service.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-clinical-services/:id",
+      "handler": "pc-clinical-service.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pc-clinical-services",
+      "handler": "pc-clinical-service.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pc-clinical-services/:id",
+      "handler": "pc-clinical-service.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pc-clinical-services/:id",
+      "handler": "pc-clinical-service.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

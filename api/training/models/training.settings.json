@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "trainings",
+  "info": {
+    "name": "training"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "faculty_name": {
+      "type": "string"
+    },
+    "program_name": {
+      "type": "string"
+    },
+    "institutional_affiliation": {
+      "type": "string"
+    },
+    "from_date": {
+      "type": "date"
+    },
+    "to_date": {
+      "type": "date"
+    },
+    "funded_by": {
+      "type": "string"
+    },
+    "brief_report": {
+      "type": "text"
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "rejected_reason": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

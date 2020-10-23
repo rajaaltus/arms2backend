@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "department_profiles",
+  "info": {
+    "name": "department_profile"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer",
+      "unique": false
+    },
+    "introduction": {
+      "type": "richtext"
+    },
+    "facilities": {
+      "type": "richtext"
+    },
+    "image_1": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "image_2": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "image_3": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    }
+  }
+}

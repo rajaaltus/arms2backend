@@ -1,0 +1,58 @@
+{
+  "connection": "default",
+  "collectionName": "key_assignments",
+  "info": {
+    "name": "key_assignment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "classification": {
+      "type": "enumeration",
+      "enum": [
+        "International",
+        "National",
+        "NotApplicable",
+        "Others"
+      ]
+    },
+    "roles": {
+      "type": "string"
+    },
+    "faculty_name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "brief_report": {
+      "type": "text"
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

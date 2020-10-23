@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/report-submit-statuses",
+      "handler": "report-submit-status.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/report-submit-statuses/count",
+      "handler": "report-submit-status.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/report-submit-statuses/:id",
+      "handler": "report-submit-status.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/report-submit-statuses",
+      "handler": "report-submit-status.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/report-submit-statuses/:id",
+      "handler": "report-submit-status.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/report-submit-statuses/:id",
+      "handler": "report-submit-status.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

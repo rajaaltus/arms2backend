@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "education_infos",
+  "info": {
+    "name": "education_info"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "qualification": {
+      "type": "string"
+    },
+    "duration_from": {
+      "type": "date"
+    },
+    "duration_to": {
+      "type": "date"
+    },
+    "institute": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

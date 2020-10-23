@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "auto_approval"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "form_name": {
+      "type": "string"
+    },
+    "approval_status": {
+      "type": "boolean"
+    }
+  },
+  "connection": "default",
+  "collectionName": "auto_approvals"
+}

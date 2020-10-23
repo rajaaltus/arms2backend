@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pc-diagnostic-tests",
+      "handler": "pc-diagnostic-test.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-diagnostic-tests/count",
+      "handler": "pc-diagnostic-test.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-diagnostic-tests/:id",
+      "handler": "pc-diagnostic-test.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pc-diagnostic-tests",
+      "handler": "pc-diagnostic-test.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pc-diagnostic-tests/:id",
+      "handler": "pc-diagnostic-test.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pc-diagnostic-tests/:id",
+      "handler": "pc-diagnostic-test.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

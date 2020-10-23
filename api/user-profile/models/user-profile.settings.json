@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "user_profiles",
+  "info": {
+    "name": "user_profile"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "employee_id": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "date"
+    },
+    "age": {
+      "required": false,
+      "type": "integer"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": ["Male", "Female", "Others"]
+    },
+    "contact_no": {
+      "type": "string"
+    },
+    "extension_no": {
+      "type": "string"
+    },
+    "official_email": {
+      "type": "string"
+    },
+    "personal_email": {
+      "type": "string"
+    },
+    "linkedin_url": {
+      "type": "string"
+    },
+    "stu_batch": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "active_status": {
+      "type": "boolean"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

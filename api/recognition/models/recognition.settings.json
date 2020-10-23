@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "recognitions",
+  "info": {
+    "name": "recognition"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "award_title": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "place": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "faculty_name": {
+      "type": "string"
+    },
+    "rejected_reason": {
+      "type": "string"
+    }
+  }
+}

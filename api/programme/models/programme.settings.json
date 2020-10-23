@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "programmes",
+  "info": {
+    "name": "programme",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["Conference", "Workshop", "Seminar", "Symposium", "Scientific"]
+    },
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "enumeration",
+      "enum": ["NIMHANS", "OUTSIDE_NIMHANS"]
+    },
+    "forum": {
+      "type": "enumeration",
+      "enum": ["International", "National", "Regional", "State", "Local"]
+    },
+    "colloborations": {
+      "type": "enumeration",
+      "enum": ["Departmental", "Interdepartmental"]
+    },
+    "from_date": {
+      "type": "date"
+    },
+    "to_date": {
+      "type": "date"
+    },
+    "participants_count": {
+      "type": "integer"
+    },
+    "coordinators": {
+      "type": "string"
+    },
+    "brief_report": {
+      "type": "text"
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "enum": ["Pending", "Approved", "Rejected"]
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "rejected_reason": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "outside_location": {
+      "type": "string"
+    }
+  }
+}

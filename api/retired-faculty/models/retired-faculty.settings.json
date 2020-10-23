@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "retired_faculties",
+  "info": {
+    "name": "retired_faculty"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "faculty_status": {
+      "type": "enumeration",
+      "enum": [
+        "Superannuated",
+        "Retired",
+        "VRS"
+      ],
+      "required": true
+    },
+    "faculty_name": {
+      "type": "string",
+      "required": true
+    },
+    "designation": {
+      "type": "string",
+      "required": true
+    },
+    "leaving_date": {
+      "type": "date",
+      "required": true
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

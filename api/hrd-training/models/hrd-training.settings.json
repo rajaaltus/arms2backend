@@ -1,0 +1,53 @@
+{
+  "connection": "default",
+  "collectionName": "hrd_trainings",
+  "info": {
+    "name": "hrd_training"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "training_name": {
+      "type": "string",
+      "required": true
+    },
+    "institutional_affiliation": {
+      "type": "string"
+    },
+    "no_of_candidates": {
+      "type": "integer",
+      "required": true
+    },
+    "from_date": {
+      "type": "date"
+    },
+    "to_date": {
+      "type": "date"
+    },
+    "remarks_status": {
+      "type": "enumeration",
+      "enum": [
+        "Completed",
+        "Awarded",
+        "Submitted",
+        "Ongoing",
+        "Joined"
+      ],
+      "required": true
+    },
+    "brief_report": {
+      "type": "text"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    }
+  }
+}

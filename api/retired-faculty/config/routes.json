@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/retired-faculties",
+      "handler": "retired-faculty.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/retired-faculties/count",
+      "handler": "retired-faculty.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/retired-faculties/:id",
+      "handler": "retired-faculty.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/retired-faculties",
+      "handler": "retired-faculty.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/retired-faculties/:id",
+      "handler": "retired-faculty.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/retired-faculties/:id",
+      "handler": "retired-faculty.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

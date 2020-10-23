@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pc-ot-other-services",
+      "handler": "pc-ot-other-services.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-ot-other-services/count",
+      "handler": "pc-ot-other-services.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-ot-other-services/:id",
+      "handler": "pc-ot-other-services.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pc-ot-other-services",
+      "handler": "pc-ot-other-services.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pc-ot-other-services/:id",
+      "handler": "pc-ot-other-services.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pc-ot-other-services/:id",
+      "handler": "pc-ot-other-services.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

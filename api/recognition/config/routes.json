@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recognitions",
+      "handler": "recognition.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recognitions/count",
+      "handler": "recognition.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recognitions/:id",
+      "handler": "recognition.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/recognitions",
+      "handler": "recognition.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recognitions/:id",
+      "handler": "recognition.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recognitions/:id",
+      "handler": "recognition.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

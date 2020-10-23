@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "pc_ot_other_services",
+  "info": {
+    "name": "Pc_OT_other_services"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Procedure": {
+      "type": "string"
+    },
+    "classification": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "no_of_patients": {
+      "type": "integer"
+    },
+    "annual_year": {
+      "type": "integer"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    }
+  }
+}

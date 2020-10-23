@@ -1,0 +1,49 @@
+{
+  "connection": "default",
+  "collectionName": "pc_clinical_services",
+  "info": {
+    "name": "pc_clinical_service"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "screenings": {
+      "type": "integer"
+    },
+    "registrations": {
+      "type": "integer"
+    },
+    "followups": {
+      "type": "integer"
+    },
+    "admissions": {
+      "type": "integer"
+    },
+    "discharges": {
+      "type": "integer"
+    },
+    "deaths": {
+      "type": "integer"
+    },
+    "emergencies": {
+      "type": "integer"
+    },
+    "external_ref": {
+      "type": "integer"
+    },
+    "internal_ref": {
+      "type": "integer"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    }
+  }
+}

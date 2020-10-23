@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "hrd_courses",
+  "info": {
+    "name": "hrd_course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "course_name": {
+      "type": "enumeration",
+      "enum": [
+        "Post_Doctoral_Fellow",
+        "PhD",
+        "DM_or_MCH",
+        "MPhil",
+        "MSc",
+        "Others"
+      ],
+      "required": true
+    },
+    "candidate_name": {
+      "type": "string",
+      "required": true
+    },
+    "durations": {
+      "type": "integer",
+      "required": true
+    },
+    "thesis_title": {
+      "type": "text"
+    },
+    "guides": {
+      "type": "string"
+    },
+    "remarks_status": {
+      "type": "enumeration",
+      "enum": [
+        "Completed",
+        "Awarded",
+        "Submitted",
+        "Ongoing",
+        "Joined"
+      ],
+      "required": true
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "other_name": {
+      "type": "string"
+    }
+  }
+}

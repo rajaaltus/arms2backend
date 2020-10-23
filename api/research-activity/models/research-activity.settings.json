@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "research_activities",
+  "info": {
+    "name": "research_activity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "investigator_type": {
+      "type": "enumeration",
+      "enum": [
+        "Principal_Investigator",
+        "CoInvestigator"
+      ]
+    },
+    "investigator_name": {
+      "type": "string"
+    },
+    "total_durations": {
+      "type": "integer"
+    },
+    "funding_source": {
+      "type": "enumeration",
+      "enum": [
+        "Intramural",
+        "Extramural",
+        "Non_Funded"
+      ]
+    },
+    "funding_agency": {
+      "type": "string"
+    },
+    "total_funds": {
+      "type": "float"
+    },
+    "funding_on_review_period": {
+      "type": "float"
+    },
+    "research_status": {
+      "type": "enumeration",
+      "enum": [
+        "Completed",
+        "Ongoing",
+        "New"
+      ]
+    },
+    "research_abstract": {
+      "type": "text"
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "faculty_name": {
+      "type": "string"
+    },
+    "rejected_reason": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

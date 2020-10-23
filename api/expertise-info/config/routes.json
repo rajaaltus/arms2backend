@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/expertise-infos",
+      "handler": "expertise-info.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/expertise-infos/count",
+      "handler": "expertise-info.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/expertise-infos/:id",
+      "handler": "expertise-info.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/expertise-infos",
+      "handler": "expertise-info.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/expertise-infos/:id",
+      "handler": "expertise-info.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/expertise-infos/:id",
+      "handler": "expertise-info.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

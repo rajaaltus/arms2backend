@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "report_submit_statuses",
+  "info": {
+    "name": "ReportSubmitStatus"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "year": {
+      "type": "integer"
+    },
+    "month": {
+      "type": "integer"
+    },
+    "userType": {
+      "type": "enumeration",
+      "enum": [
+        "FACULTY",
+        "STUDENT",
+        "SUPER_ADMIN"
+      ]
+    },
+    "submitStatus": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "saved_report": {
+      "model": "saved-reports"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "presentations",
+  "info": {
+    "name": "presentation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Presentation",
+        "Poster"
+      ]
+    },
+    "forum": {
+      "type": "enumeration",
+      "enum": [
+        "International",
+        "National"
+      ]
+    },
+    "faculty_name": {
+      "type": "string"
+    },
+    "coauthors": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text"
+    },
+    "reference": {
+      "type": "text"
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "rejected_reason": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

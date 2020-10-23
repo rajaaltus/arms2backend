@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "patents",
+  "info": {
+    "name": "patent"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "registration_no": {
+      "type": "string"
+    },
+    "patent_status": {
+      "type": "string"
+    },
+    "brief_report": {
+      "type": "text"
+    },
+    "approval_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "department": {
+      "model": "department"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "faculty_name": {
+      "type": "string"
+    },
+    "rejected_reason": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

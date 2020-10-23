@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saved_reports",
+  "info": {
+    "name": "saved_reports"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "annual_year": {
+      "type": "integer"
+    },
+    "userType": {
+      "type": "enumeration",
+      "enum": [
+        "FACULTY",
+        "STUDENT",
+        "DEPARTMENT"
+      ]
+    },
+    "department": {
+      "model": "department"
+    },
+    "program": {
+      "type": "richtext"
+    },
+    "visitor": {
+      "type": "richtext"
+    },
+    "training": {
+      "type": "richtext"
+    },
+    "presentation": {
+      "type": "richtext"
+    },
+    "participation": {
+      "type": "richtext"
+    },
+    "publicEngagement": {
+      "type": "richtext"
+    },
+    "Month": {
+      "type": "integer"
+    },
+    "from": {
+      "type": "date"
+    },
+    "to": {
+      "type": "date"
+    },
+    "research": {
+      "type": "richtext"
+    },
+    "publication": {
+      "type": "richtext"
+    },
+    "recognition": {
+      "type": "richtext"
+    },
+    "patent": {
+      "type": "richtext"
+    },
+    "assignment": {
+      "type": "richtext"
+    }
+  }
+}

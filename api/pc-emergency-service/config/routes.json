@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pc-emergency-services",
+      "handler": "pc-emergency-service.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-emergency-services/count",
+      "handler": "pc-emergency-service.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pc-emergency-services/:id",
+      "handler": "pc-emergency-service.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pc-emergency-services",
+      "handler": "pc-emergency-service.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pc-emergency-services/:id",
+      "handler": "pc-emergency-service.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pc-emergency-services/:id",
+      "handler": "pc-emergency-service.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

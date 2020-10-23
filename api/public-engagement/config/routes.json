@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/public-engagements",
+      "handler": "public-engagement.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/public-engagements/count",
+      "handler": "public-engagement.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/public-engagements/:id",
+      "handler": "public-engagement.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/public-engagements",
+      "handler": "public-engagement.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/public-engagements/:id",
+      "handler": "public-engagement.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/public-engagements/:id",
+      "handler": "public-engagement.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
