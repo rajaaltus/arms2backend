@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/forgot-password/email",
+      "handler": "sendMail.index",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

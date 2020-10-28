@@ -559,7 +559,8 @@
             "type": "string"
           },
           "date": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "place": {
             "type": "string"
@@ -591,6 +592,12 @@
               },
               "status": {
                 "type": "boolean"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -639,6 +646,12 @@
               },
               "department": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -662,10 +675,22 @@
               "name": {
                 "type": "string"
               },
-              "hash": {
+              "alternativeText": {
                 "type": "string"
               },
-              "sha256": {
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
                 "type": "string"
               },
               "ext": {
@@ -680,6 +705,9 @@
               "url": {
                 "type": "string"
               },
+              "previewUrl": {
+                "type": "string"
+              },
               "provider": {
                 "type": "string"
               },
@@ -687,6 +715,12 @@
                 "type": "object"
               },
               "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
                 "type": "string"
               }
             }
@@ -719,7 +753,8 @@
             "type": "string"
           },
           "date": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "place": {
             "type": "string"
@@ -745,6 +780,12 @@
             "type": "string"
           },
           "rejected_reason": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
