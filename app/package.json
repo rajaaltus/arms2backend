@@ -1,0 +1,39 @@
+{
+  "name": "arms-2-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "<0.20.0",
+    "mysql": "latest",
+    "strapi": "3.2.4",
+    "strapi-admin": "3.2.4",
+    "strapi-connector-bookshelf": "3.2.4",
+    "strapi-plugin-content-manager": "3.2.4",
+    "strapi-plugin-content-type-builder": "3.2.4",
+    "strapi-plugin-documentation": "3.2.4",
+    "strapi-plugin-email": "3.2.4",
+    "strapi-plugin-upload": "3.2.4",
+    "strapi-plugin-users-permissions": "3.2.4",
+    "strapi-provider-email-sendgrid": "^3.2.4",
+    "strapi-utils": "3.2.4"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "5a9fe1a4-fd5f-4ff3-a93e-27e12218113b"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
