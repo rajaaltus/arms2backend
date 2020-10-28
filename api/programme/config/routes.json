@@ -10,6 +10,14 @@
     },
     {
       "method": "GET",
+      "path": "/programmes/email",
+      "handler": "Email.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/programmes/count",
       "handler": "programme.count",
       "config": {

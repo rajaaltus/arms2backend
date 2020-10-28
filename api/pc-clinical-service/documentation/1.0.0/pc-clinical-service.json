@@ -581,6 +581,12 @@
               },
               "status": {
                 "type": "boolean"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           }
@@ -622,6 +628,12 @@
             "type": "boolean"
           },
           "department": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }

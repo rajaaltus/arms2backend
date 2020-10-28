@@ -545,10 +545,12 @@
             "type": "string"
           },
           "duration_from": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "duration_to": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "brief_summary": {
             "type": "string"
@@ -601,6 +603,12 @@
               },
               "department": {
                 "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           }
@@ -618,10 +626,12 @@
             "type": "string"
           },
           "duration_from": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "duration_to": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "brief_summary": {
             "type": "string"
@@ -630,6 +640,12 @@
             "type": "boolean"
           },
           "user": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }

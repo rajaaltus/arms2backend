@@ -557,7 +557,8 @@
             "type": "string"
           },
           "pub_date": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "volume_no": {
             "type": "string"
@@ -590,7 +591,8 @@
             "type": "string"
           },
           "approved_date": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "deleted": {
             "type": "boolean"
@@ -619,6 +621,12 @@
               },
               "status": {
                 "type": "boolean"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -666,6 +674,12 @@
                 "type": "string"
               },
               "department": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
                 "type": "string"
               }
             }
@@ -715,7 +729,8 @@
             "type": "string"
           },
           "pub_date": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "volume_no": {
             "type": "string"
@@ -748,7 +763,8 @@
             "type": "string"
           },
           "approved_date": {
-            "type": "string"
+            "type": "string",
+            "format": "date"
           },
           "deleted": {
             "type": "boolean"
@@ -774,6 +790,12 @@
             "type": "string"
           },
           "rejected_reason": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }
