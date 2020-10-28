@@ -1,3 +1,8 @@
-# Strapi application
+# ARMS 2 Backend
 
-A quick description of your strapi application
+### Strapi version v3.2.4
+
+> Container List
+- MySql
+- PhpMyAdmin
+- Strapi
