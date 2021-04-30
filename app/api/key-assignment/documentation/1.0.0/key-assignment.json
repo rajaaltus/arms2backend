@@ -648,6 +648,9 @@
                 "type": "string"
               }
             }
+          },
+          "month": {
+            "type": "integer"
           }
         }
       },
@@ -696,6 +699,9 @@
           },
           "user": {
             "type": "string"
+          },
+          "month": {
+            "type": "integer"
           },
           "created_by": {
             "type": "string"

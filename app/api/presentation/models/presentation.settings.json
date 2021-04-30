@@ -3,11 +3,13 @@
   "connection": "default",
   "collectionName": "presentations",
   "info": {
-    "name": "presentation"
+    "name": "presentation",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "annual_year": {
@@ -68,6 +70,9 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "month": {
+      "type": "integer"
     }
   }
 }

@@ -1,12 +1,15 @@
 {
+  "kind": "collectionType",
   "connection": "default",
   "collectionName": "key_assignments",
   "info": {
-    "name": "key_assignment"
+    "name": "key_assignment",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "annual_year": {
@@ -53,6 +56,9 @@
     "user": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "month": {
+      "type": "integer"
     }
   }
 }

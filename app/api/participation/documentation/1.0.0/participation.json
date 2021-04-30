@@ -711,6 +711,9 @@
                 "type": "string"
               }
             }
+          },
+          "month": {
+            "type": "integer"
           }
         }
       },
@@ -768,6 +771,9 @@
           },
           "rejected_reason": {
             "type": "string"
+          },
+          "month": {
+            "type": "integer"
           },
           "created_by": {
             "type": "string"

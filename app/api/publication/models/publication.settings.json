@@ -3,7 +3,8 @@
   "connection": "default",
   "collectionName": "publications",
   "info": {
-    "name": "publication"
+    "name": "publication",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,11 +17,25 @@
     },
     "publication_type": {
       "type": "enumeration",
-      "enum": ["Journal_Article", "Articles_for_Professionals", "Book", "Book_Chapter", "Monograph", "Manual", "Report", "Article_for_General_public"]
+      "enum": [
+        "Journal_Article",
+        "Articles_for_Professionals",
+        "Book",
+        "Book_Chapter",
+        "Monograph",
+        "Manual",
+        "Report",
+        "Article_for_General_public"
+      ]
     },
     "classification": {
       "type": "enumeration",
-      "enum": ["International", "National", "NotApplicable", "Others"]
+      "enum": [
+        "International",
+        "National",
+        "NotApplicable",
+        "Others"
+      ]
     },
     "pmid": {
       "type": "string"
@@ -75,7 +90,11 @@
     },
     "approval_status": {
       "type": "enumeration",
-      "enum": ["Pending", "Approved", "Rejected"]
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
     },
     "department": {
       "model": "department"
@@ -89,6 +108,9 @@
     },
     "rejected_reason": {
       "type": "string"
+    },
+    "month": {
+      "type": "integer"
     }
   }
 }

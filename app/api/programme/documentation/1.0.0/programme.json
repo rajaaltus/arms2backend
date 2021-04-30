@@ -741,6 +741,9 @@
           },
           "outside_location": {
             "type": "string"
+          },
+          "month": {
+            "type": "integer"
           }
         }
       },
@@ -828,6 +831,9 @@
           },
           "outside_location": {
             "type": "string"
+          },
+          "month": {
+            "type": "integer"
           },
           "created_by": {
             "type": "string"

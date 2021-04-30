@@ -17,22 +17,40 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": ["Conference", "Workshop", "Seminar", "Symposium", "Scientific"]
+      "enum": [
+        "Conference",
+        "Workshop",
+        "Seminar",
+        "Symposium",
+        "Scientific"
+      ]
     },
     "name": {
       "type": "string"
     },
     "location": {
       "type": "enumeration",
-      "enum": ["NIMHANS", "OUTSIDE_NIMHANS"]
+      "enum": [
+        "NIMHANS",
+        "OUTSIDE_NIMHANS"
+      ]
     },
     "forum": {
       "type": "enumeration",
-      "enum": ["International", "National", "Regional", "State", "Local"]
+      "enum": [
+        "International",
+        "National",
+        "Regional",
+        "State",
+        "Local"
+      ]
     },
     "colloborations": {
       "type": "enumeration",
-      "enum": ["Departmental", "Interdepartmental"]
+      "enum": [
+        "Departmental",
+        "Interdepartmental"
+      ]
     },
     "from_date": {
       "type": "date"
@@ -51,7 +69,11 @@
     },
     "approval_status": {
       "type": "enumeration",
-      "enum": ["Pending", "Approved", "Rejected"]
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ]
     },
     "approved_by": {
       "type": "string"
@@ -77,6 +99,9 @@
     },
     "outside_location": {
       "type": "string"
+    },
+    "month": {
+      "type": "integer"
     }
   }
 }

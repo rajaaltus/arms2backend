@@ -56,7 +56,12 @@
     },
     "userType": {
       "type": "enumeration",
-      "enum": ["DEPARTMENT", "FACULTY", "STUDENT", "SUPER_ADMIN"]
+      "enum": [
+        "DEPARTMENT",
+        "FACULTY",
+        "STUDENT",
+        "SUPER_ADMIN"
+      ]
     },
     "fullname": {
       "type": "string"
