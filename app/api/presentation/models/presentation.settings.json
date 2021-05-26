@@ -73,6 +73,12 @@
     },
     "month": {
       "type": "integer"
+    },
+    "date": {
+      "type": "date"
+    },
+    "place": {
+      "type": "text"
     }
   }
 }

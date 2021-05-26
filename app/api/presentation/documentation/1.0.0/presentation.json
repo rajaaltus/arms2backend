@@ -713,6 +713,13 @@
           },
           "month": {
             "type": "integer"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "place": {
+            "type": "string"
           }
         }
       },
@@ -772,6 +779,13 @@
           },
           "month": {
             "type": "integer"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "place": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
